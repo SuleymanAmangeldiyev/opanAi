@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Suleyman and opanAI Codex</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+  #ekeran2{
+    display: flex;
+   height: 100vh;
+   align-items: center;
+   flex-direction: column;
+    justify-content: center;
+  }
+   #ekeran2 div{
+    color: white;
+   }
+  #suleyman{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+  }
+</style>
+  </head>
+  <body>
+    <div id="ekeran1">
+    <div id="app">
+      <div id="chat_container"></div>
+
+      <form>
+        <textarea name="prompt" rows="1" cols="1" placeholder="Ask codex..."></textarea>
+        <button type="submit"><img src="assets/send.svg" alt="send" />
+      </form>
+    </div></div>
+    <div id="ekeran2">
+     
+      <img src="./assets/WhatsApp.jpeg" alt="Suleyman" id="suleyman">
+      <div>
+        Suleyman
+      </div>
+      <div>
+        Powered with OpenAI
+      </div>
+      <div>
+        We will start in seconds... 
+      </div>
+       <div>
+   Chating system for to learn new things... , but it's limited.  
+ </div>
+       <div>Ask any questions for coding. 
+</div>
+    </div>
+<script>
+  const ekeran1 = document.getElementById('ekeran1')
+  const ekeran2 = document.getElementById('ekeran2')
+
+  ekeran1.style.display = 'none';
+
+  setTimeout(()=>{
+  ekeran1.style.display = 'block';
+  ekeran2.style.display = 'none';
+  }, 10000)
+</script>
+    <script type="module" src="script.js"></script>
+  </body>
+</html>
